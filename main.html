@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Vivek Kumar">
+    <meta name="description" content="The website to get real time weather details.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Weather</title>
+    <link rel="icon" href="icons/cloudy.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Live Weather Update</h1>
+    <div>
+        <form id="search-form">
+            <input type="search" placeholder="Enter City" id="search-input" required autocomplete="off" />
+            <br> <br>
+            <button id="search-button">Search</button>
+        </form>
+    </div>
+    <main id="app-container">
+        <div id="location">
+            <p>-------</p>
+        </div>
+        <div id="temp">
+            <img id="temp-icon" src="icons/sun.png" alt="">
+            <p><span id="temp-value">----</span> <span id="temp-unit">&#176c</span><br><span
+                    id="humidity-value"></span></span> <span id="humidity-unit">&#37;
+            </p>
+        </div>
+        <div id="climate">
+            <p>------</p>
+        </div>
+    </main>
+    <!-- <div id="forecast">
+        <a href="forecast.html" target="_blank"><button id="search-button">Weather
+                Forecast</button></a>
+    </div> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
